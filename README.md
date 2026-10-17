@@ -128,8 +128,8 @@ ccfd/
 ## How to Run
 
 ```bash
-git clone <your-repo-url>
-cd ccfd
+git clone https://github.com/himanshu8038sharma/Credit-Card-Fraud-Detection--Sampling-Ratio-Model-Comparison.git
+cd Credit-Card-Fraud-Detection--Sampling-Ratio-Model-Comparison
 pip install -r requirements.txt
 # download creditcard.csv into data/ (see data/README.md)
 jupyter notebook fraud_detection.ipynb
@@ -146,6 +146,7 @@ amount_scaler = joblib.load("models/amount_scaler.pkl")
 ```
 
 Apply the two scalers to `Time` and `Amount` before calling `model.predict(...)`. Features must be in the original column order (`Time`, `V1`–`V28`, `Amount`).
+
 
 
 ## Tech Stack
