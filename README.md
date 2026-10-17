@@ -147,11 +147,6 @@ amount_scaler = joblib.load("models/amount_scaler.pkl")
 
 Apply the two scalers to `Time` and `Amount` before calling `model.predict(...)`. Features must be in the original column order (`Time`, `V1`–`V28`, `Amount`).
 
-## Limitations & Future Work
-
-- Single train/test split; the test set has only 95 fraud cases, so metrics can shift noticeably between splits
-- No hyperparameter tuning, and the decision threshold was left at the default 0.5
-- Future: SMOTE comparison, XGBoost, cross-validation, real-time deployment, a Streamlit dashboard
 
 ## Tech Stack
 
